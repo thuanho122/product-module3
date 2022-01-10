@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;   
+}
+
+header, footer{
+    color: white;
+    background-color: rgb(240, 63, 32);
+}
+.menu{
+    height: 25px;
+    background-color: coral;
+}
+.menu li{
+    position: relative;
+    float: left;
+    list-style: none;
+}
+.menu li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    background-color: cadetblue;
+    color: white;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+.menu ul ul {
+    position: absolute;
+    top: 33px;
+    left: 15px;
+    /* bảng phụ ẩn đi */
+    visibility: hidden;
+}
+.menu ul ul li a{
+    width: 200px;
+    text-align: right;
+    padding-left: 10px;
+}
+/*bảng phụ hiện ra*/
+.menu ul li:hover ul{
+    visibility: visible;
+}
+
